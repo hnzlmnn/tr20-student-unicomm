@@ -1,0 +1,34 @@
+{
+  "name": "emojisocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register --recursive -R spec ./src/**/*.spec.ts",
+    "build": "tsc",
+    "lint": "tslint --project .",
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/app.ts",
+    "prod": "tsc && node ./build/app.js"
+  },
+  "keywords": [],
+  "author": "Malte Heinzelmann",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "emojilib": "^2.4.0",
+    "node-emoji": "^1.10.0",
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.5",
+    "@types/node": "^12.6.8",
+    "@types/node-emoji": "^1.8.1",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "ts-node": "^8.3.0",
+    "ts-node-dev": "^1.0.0-pre.40",
+    "tslint": "^5.18.0"
+  }
+}
